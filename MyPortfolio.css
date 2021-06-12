@@ -1,0 +1,332 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	scroll-behavior: smooth;
+}
+header{
+	padding:24px 0;
+	background:rgba(0,0,0,0.50);
+}
+.container{
+	max-width: 1170px;
+	margin:0 auto;
+}
+.row{
+    display: flex;
+	flex-wrap: wrap;
+}
+.logo{
+	animation-name:logoxoay;
+	animation-duration: 3s;
+}
+.logo img{
+	width: 100%;
+	max-width: 80px;
+}
+@keyframes logoxoay{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+nav{
+/*	background:pink;*/
+	height:100%;
+}
+nav ul{
+	height:100%;
+/*	background: black;*/
+	display:flex;
+	justify-content: flex-end;
+	list-style: none;
+	align-items: center;
+}
+nav ul li{
+	margin: 0 24px;
+}
+nav ul li a {
+	text-decoration: none;
+	color:white;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: 'Indie Flower', cursive;
+}
+nav a:hover{
+	color:rgba(237,201,82,1.00);
+}
+.banner{
+	width: 100%;
+	height:450px;
+	background:rgba(0,0,0,0.50);
+	position:relative;
+	z-index:-1;
+}
+.hinh{
+	position: absolute;
+    top: -120px;
+    margin-left: 70px;
+	z-index:-1;
+}
+h1{
+	color:white;
+	relative:absolute;
+	font-size: 60px;
+	margin-left:230px;
+	padding-top:300px;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.boxtext{
+/*	color:rgba(237,201,82,1.00);*/
+	width: 500px;
+	height: 200px;
+/*	background-color: red;*/
+	position: absolute;
+	left: 830px;
+	bottom: 140px;
+}
+h2{
+	font-size: 40px;
+	color:rgba(237,201,82,1.00);
+	font-family:Comic Sans MS, Comic Sans, cursive;
+}
+h3{
+	color:rgba(127,127,127,1.00);
+	font-size: 40px;
+	-webkit-text-stroke: 1.5pt rgba(237,201,82,1.00);
+	font-family:  Comic Sans MS, Comic Sans, cursive;
+}
+.aboutme{
+	height: 420px;
+	background-color:rgba(237,201,82,1.00);
+}
+.designer{
+	margin-left: 700px;
+	position: absolute;
+	padding-top:15px;
+}
+.pts{
+	position:absolute;
+	bottom: 280px;
+	left: 180px;
+	animation: app 2s linear infinite;
+}
+.ai{
+	position:absolute;
+	bottom:350px;
+	left: 320px;
+	animation: app 2s linear infinite;
+}
+@keyframes app{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform:rotate(30deg);
+	}
+}
+h4{
+	color: rgba(237,201,82,1.00);
+	-webkit-text-stroke: 0.5pt white;
+	font-size: 80px;
+	font-family: 'Indie Flower', cursive;
+	margin-left: 180px;
+	padding-top: 30px;
+}
+p{
+	color:rgba(127,127,127,1.00);
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	margin-left: 8.33%;
+	padding-top: 5px;
+	line-height: 30px;
+}
+.skills{
+	height: 750px;
+	background-color: rgba(237,201,82,1.00);
+}
+h5{
+	color: rgba(237,201,82,1.00);
+	-webkit-text-stroke: 1pt white;
+	font-size: 130px;
+	font-family: 'Indie Flower', cursive;
+	margin-left: 275px;
+	padding-top: 80px;
+}
+.hinhskills{
+	position: absolute;
+	left: 250px;
+	top:1000px;
+}
+.aiskill{
+	position: absolute;
+	left:350px;
+	animation: appskill 10s linear infinite;
+}
+.ptsskill{
+	position: absolute;
+	left: 600px;
+	animation: appskill 10s linear infinite;
+}
+.idskill{
+	position:absolute;
+	left: 850px;
+	animation: appskill 10s linear infinite;
+}
+@keyframes appskill{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg)
+	}
+}
+.porfolio{
+	height:950px;
+	background-color: rgba(237,201,82,1.00);
+}
+.titleporfolio{
+	color: rgba(237,201,82,1.00);
+	-webkit-text-stroke: 1pt white;
+	font-size: 160px;
+	font-family: 'Indie Flower', cursive;
+	margin-top: 80px;
+	line-height: 90px;
+	margin-left:50px;
+}
+.poster{
+	padding-top:60px;
+}
+h7{
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	font-weight:bold;
+	font-size: 70px;
+	margin-left: 450px;	
+}
+.hinhposter{
+	margin-left:200px;
+	padding-top: 10px;
+}
+.others{
+	margin-left: 300px;
+	margin-top: -350px;
+}
+h8{
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	font-weight:bold;
+	font-size: 70px;
+	margin-left: 180px;
+}
+.contact{
+	height: 550px;
+	background-color: rgba(237,201,82,1.00);
+}
+.titlecontact{
+	color: rgba(237,201,82,1.00);
+	-webkit-text-stroke: 1pt white;
+	font-size: 80px;
+	font-family: 'Indie Flower', cursive;
+	margin-top: 80px;
+	margin-left: 50px;
+}
+.textcontact{
+	margin-left: -430px;
+	margin-top: 190px;
+}
+p1{
+	color:rgba(127,127,127,1.00);
+	font-family: Comic Sans MS, Comic Sans, cursive;
+
+}
+p2{
+	color: white;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	font-size: 20px;
+	font-weight: bold;
+}
+.call{
+	margin-top: 50px;
+}
+.hinhcall{
+	margin-left: 40px;
+	margin-top: 10px;
+}
+p3{
+	color:rgba(127,127,127,1.00);
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	margin-left:10px;
+	font-size: 20px;
+}
+.email{
+	margin-top: 30px;
+}
+.hinhmail{
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.table{
+	margin-left:650px;
+	margin-top: -380px;
+}
+input{
+	background-color:rgba(237,201,82,1.00);
+	text-align: center;
+	width: 400px;
+	height: 50px;
+	margin-top:20px;
+}
+footer{
+	width:100%;
+	height:100px;
+	background-color:rgba(0,0,0,0.50);
+	text-align: center;
+}
+p4{
+	color:white;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+	font-size:20px;
+	line-height: 100px;
+}
+.col-1{
+	width: 8.33%;
+}
+.col-2{
+	width: 16.66%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.33%;
+}
+.col-5{
+	width: 41.66%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.33%;
+}
+.col-8{
+	width: 66.64%;
+}
+.col-9{
+	width: 74.97%
+}
+.col-10{
+	width: 83.3%
+}
+.col-11{
+	width: 91.63%
+}
+.col-12{
+	width: 100%;
+}
